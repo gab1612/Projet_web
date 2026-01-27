@@ -38,7 +38,7 @@
         <span>HOMME</span>
     </a>
     <a href="categorie.php?cat=femme">
-        <img src="images/femme.jpg">
+        <img src="images/femme_accueil.jpg">
         <span>FEMME</span>
     </a>
     <a href="categorie.php?cat=enfant">
