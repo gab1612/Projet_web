@@ -51,7 +51,7 @@ footer {
 /* BURGER */
 #burger {
     position:fixed;
-    top:20px;
+    top:45px;
     left:20px;
     z-index:2000;
     cursor:pointer;
@@ -61,7 +61,7 @@ footer {
     width:30px;
     height:4px;
     background:#820606;
-    margin:6px 0;
+    margin:7px 0;
 }
 
 #side-menu {
