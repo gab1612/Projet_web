@@ -15,13 +15,9 @@ $cat = strtolower($cat);
 </head>
 <body>
 
-<!-- MENU BURGER -->
-<div id="burger">
-    <span></span><span></span><span></span>
-</div>
-
+<!-- MENU BURGER + OVERLAY -->
+<div id="burger"><span></span><span></span><span></span></div>
 <div id="overlay"></div>
-
 <nav id="side-menu">
     <a href="categorie.php?cat=homme">Homme</a>
     <a href="categorie.php?cat=femme">Femme</a>
@@ -39,18 +35,15 @@ $cat = strtolower($cat);
     </div>
 </header>
 
-<!-- TITRE CATEGORIE -->
 <section class="categorie-title">
     <h2><?= strtoupper($cat) ?></h2>
 </section>
 
-<!-- PRODUITS -->
 <section class="produits-grid">
 <?php
 $count = 0;
 foreach ($produits as $p):
     if ($p["categorie"] === $cat):
-        if ($count >= 8) break;
         $count++;
 ?>
     <div class="produit-card">
@@ -68,7 +61,6 @@ endforeach;
 ?>
 </section>
 
-<!-- FOOTER IDENTIQUE -->
 <footer>
     <p>© 2026 Ma Boutique — À propos | Contact | Mentions légales</p>
 </footer>
