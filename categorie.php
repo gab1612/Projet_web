@@ -2,11 +2,12 @@
 session_start();
 require __DIR__ . "/data/produits.php";
 
-$cat = $_GET["cat"];
+$cat = $_GET["cat"] ?? "homme";
+$cat = strtolower($cat);
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title><?= ucfirst($cat) ?></title>
@@ -14,25 +15,56 @@ $cat = $_GET["cat"];
 </head>
 <body>
 
-<h1><?= strtoupper($cat) ?></h1>
+<!-- MENU BURGER + OVERLAY -->
+<div id="burger"><span></span><span></span><span></span></div>
+<div id="overlay"></div>
+<nav id="side-menu">
+    <a href="categorie.php?cat=homme">Homme</a>
+    <a href="categorie.php?cat=femme">Femme</a>
+    <a href="categorie.php?cat=enfant">Enfant</a>
+</nav>
 
-<div class="produits">
-<?php foreach ($produits as $p): ?>
-    <?php if ($p["categorie"] === $cat): ?>
-        <div class="produit">
-            <img src="<?= $p["image"] ?>">
-            <h3><?= $p["nom"] ?></h3>
-            <p><?= $p["prix"] ?> €</p>
-            <form action="ajouter_panier.php" method="post">
-                <input type="hidden" name="id" value="<?= $p["id"] ?>">
-                <button>Ajouter au panier</button>
-            </form>
-        </div>
-    <?php endif; ?>
-<?php endforeach; ?>
-</div>
+<!-- HEADER IDENTIQUE -->
+<header class="top-bar">
+    <div></div>
+    <h1 class="site-title">MA BOUTIQUE</h1>
+    <div class="top-links">
+        <a href="#">🔍</a>
+        <a href="#">👤</a>
+        <a href="panier.php">🛒</a>
+    </div>
+</header>
 
-<a href="index.php">⬅ Retour</a>
+<section class="categorie-title">
+    <h2><?= strtoupper($cat) ?></h2>
+</section>
 
+<section class="produits-grid">
+<?php
+$count = 0;
+foreach ($produits as $p):
+    if ($p["categorie"] === $cat):
+        $count++;
+?>
+    <div class="produit-card">
+        <img src="<?= $p["image"] ?>" alt="<?= $p["nom"] ?>">
+        <h3><?= $p["nom"] ?></h3>
+        <p><?= $p["prix"] ?> €</p>
+        <form action="ajouter_panier.php" method="post">
+            <input type="hidden" name="id" value="<?= $p["id"] ?>">
+            <button>Commander</button>
+        </form>
+    </div>
+<?php
+    endif;
+endforeach;
+?>
+</section>
+
+<footer>
+    <p>© 2026 Ma Boutique — À propos | Contact | Mentions légales</p>
+</footer>
+
+<script src="js/menu.js"></script>
 </body>
 </html>
