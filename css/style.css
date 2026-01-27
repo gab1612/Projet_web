@@ -1,4 +1,4 @@
-body { margin:0; font-family: Arial; }
+body { margin:0; font-family: Arial;color:#820606 ; }
 
 .top-bar {
     display:grid;
@@ -42,10 +42,10 @@ body { margin:0; font-family: Arial; }
 }
 
 footer {
-    background:#111;
+    background:#820606;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:1px;
 }
 
 /* BURGER */

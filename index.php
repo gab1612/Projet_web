@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ma Boutique</title>
+    <title>PARIS XVI</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
 <!-- HEADER -->
 <header class="top-bar">
     <div></div>
-    <h1 class="site-title">MA BOUTIQUE</h1>
+    <h1 class="site-title">PARIS XVI</h1>
     <div class="top-links">
         <a href="#">🔍</a>
         <a href="#">👤</a>
@@ -49,7 +49,7 @@
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Ma Boutique – À propos | Contact | Mentions légales</p>
+    <p>© 2026 Paris XVI – À propos | Contact | Mentions légales</p>
 </footer>
 
 <script src="js/menu.js"></script>
