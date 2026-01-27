@@ -31,21 +31,25 @@
     </div>
 </header>
 
-<!-- SECTIONS -->
-<section class="categories">
-    <a href="categorie.php?cat=homme">
-        <img src="images/homme_accueil.png">
-        <span>HOMME</span>
-    </a>
-    <a href="categorie.php?cat=femme">
-        <img src="images/femme_accueil.jpg">
-        <span>FEMME</span>
-    </a>
-    <a href="categorie.php?cat=enfant">
-        <img src="images/enfant_accueil.png">
-        <span>ENFANT</span>
-    </a>
-</section>
+<!-- BODY -->
+<body1>
+    <form id="registerForm" class="form">
+        <input type="text" id="prenom" placeholder="Renseignez votre prénom" required>
+
+        <input type="password" id="password" placeholder="Renseignez votre mot de passe" required>
+
+        <input type="password" id="confirmPassword" placeholder="Confirmation de votre mot de passe" required>
+
+        <p class="error" id="errorMessage"></p>
+
+        <button type="submit">Créer un compte</button>
+        <button type="submit">Se connecter</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body1>
+
 
 <!-- FOOTER -->
 <footer>
