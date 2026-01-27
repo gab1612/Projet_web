@@ -73,6 +73,7 @@ footer {
     background:#000;
     padding-top:80px;
     transition:0.3s;
+    z-index:1800;
 }
 #side-menu a {
     display:block;
@@ -94,4 +95,41 @@ footer {
     border:1px solid #ddd;
     padding:10px;
     width:200px;
+}
+
+/* OVERLAY */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 1500;
+    display: none;
+}
+
+/* Quand menu ouvert */
+#overlay.active {
+    display: block;
+}
+
+/* Burger blanc quand menu ouvert */
+#burger span {
+    transition: 0.3s;
+}
+
+#burger.open span {
+    background: white;
+}
+
+/* BONUS : animation X */
+#burger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+#burger.open span:nth-child(2) {
+    opacity: 0;
+}
+#burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
