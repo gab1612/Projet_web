@@ -14,7 +14,21 @@ $total = 0;
 </head>
 <body>
 
-<h1>🛒 Panier</h1>
+<!-- HEADER -->
+<header class="top-bar">
+    <div></div>
+    <h1 class="site-title">
+        <a href="index.php">PARIS XVI</a>
+    </h1>
+    <div class="top-links">
+        <a href="#">🔍</a>
+        <a href="compte.php">👤</a>
+        <a href="panier.php">🛒</a>
+    </div>
+</header>
+
+<h1 class="titre-panier">Votre panier</h1>
+
 
 <?php if (!$panier): ?>
 <p>Panier vide</p>
@@ -37,7 +51,12 @@ $total = 0;
 </form>
 <?php endif; ?>
 
-<a href="index.php">⬅ Continuer</a>
+<a href="index.php">⬅ Continuer mon shopping </a>
+
+
+<footer>
+    <p>© 2026 Paris XVI – À propos | Contact | Mentions légales</p>
+</footer>
 
 </body>
 </html>

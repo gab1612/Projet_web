@@ -54,6 +54,7 @@ footer {
     padding:1px;
 }
 
+
 /* BURGER */
 #burger {
     position:fixed;
@@ -328,6 +329,7 @@ button:hover {
     background: #333;
 }
 
+<<<<<<< HEAD
 
 /* ===== PAGE CONFIRMATION ===== */
 .confirmation {
@@ -379,3 +381,26 @@ footer a {
     color: white;          /* Enlever la couleur bleue de l'hyperlien */
     text-decoration: none; /* enlève le soulignement */
 }
+=======
+.titre-panier {
+    position: relative;      /* nécessaire pour ::before */
+    color: white;            /* couleur du texte */
+    font-size: 2em;
+    text-align: center;      /* centrer le texte */
+    margin: 0;               /* supprimer marges par défaut */
+    padding: 5px ;         /* espace vertical pour la bande */
+}
+
+.titre-panier::before {
+    content: "";             /* élément décoratif */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;            /* toute la largeur de la fenêtre */
+    height: 100%;            /* hauteur = celle du h1 (padding inclus) */
+    background-color: #820606; /* couleur de la bande */
+    z-index: -1;             /* derrière le texte */
+}
+
+
+>>>>>>> 7a3a6a9 (modif panier)
