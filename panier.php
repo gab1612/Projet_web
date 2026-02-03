@@ -73,7 +73,11 @@ $total = 0;
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Paris XVI – À propos | Contact | Mentions légales</p>
+    <p>© 2026 Paris XVI – 
+        <a href="apropos.php">À propos</a> | 
+        Contact | 
+        Mentions légales
+    </p>
 </footer>
 
 <script src="js/menu.js"></script>
