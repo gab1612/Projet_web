@@ -358,3 +358,22 @@ button:hover {
 .btn-retour:hover {
     background: #333;
 }
+
+
+/* ===== PAGE A PROPOS ===== */
+.apropos {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.apropos img {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;          /* Enlever la couleur bleue de l'hyperlien */
+    text-decoration: none; /* enlève le soulignement */
+}
