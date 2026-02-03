@@ -1,14 +1,14 @@
 <?php
 $produits = [
     // HOMME
-    ["id"=>1, "nom"=>"T-shirt Homme 1", "prix"=>25, "categorie"=>"homme", "image"=>"images/homme1.jpg"],
-    ["id"=>2, "nom"=>"T-shirt Homme 2", "prix"=>30, "categorie"=>"homme", "image"=>"images/homme2.jpg"],
-    ["id"=>3, "nom"=>"Jean Homme 1", "prix"=>50, "categorie"=>"homme", "image"=>"images/homme3.jpg"],
-    ["id"=>4, "nom"=>"Jean Homme 2", "prix"=>55, "categorie"=>"homme", "image"=>"images/homme4.jpg"],
-    ["id"=>5, "nom"=>"Veste Homme 1", "prix"=>70, "categorie"=>"homme", "image"=>"images/homme5.jpg"],
-    ["id"=>6, "nom"=>"Veste Homme 2", "prix"=>75, "categorie"=>"homme", "image"=>"images/homme6.jpg"],
-    ["id"=>7, "nom"=>"Chemise Homme 1", "prix"=>40, "categorie"=>"homme", "image"=>"images/homme7.jpg"],
-    ["id"=>8, "nom"=>"Chemise Homme 2", "prix"=>45, "categorie"=>"homme", "image"=>"images/homme8.jpg"],
+    ["id"=>1, "nom"=>"T-shirt Blanc", "prix"=>49.95, "categorie"=>"homme", "image"=>"images/t_shirt_blanc_homme.jpg"],
+    ["id"=>2, "nom"=>"T-shirt Noir", "prix"=>49.95, "categorie"=>"homme", "image"=>"images/t_shirt_noir_homme.jpg"],
+    ["id"=>3, "nom"=>"Jean Large", "prix"=>79.95, "categorie"=>"homme", "image"=>"images/jean_homme.png"],
+    ["id"=>4, "nom"=>"Pantalon Large", "prix"=>99.95, "categorie"=>"homme", "image"=>"images/pantalon_homme.png"],
+    ["id"=>5, "nom"=>"Veste en laine", "prix"=>104.95, "categorie"=>"homme", "image"=>"images/veste_grise_homme.png"],
+    ["id"=>6, "nom"=>"Manteau Long", "prix"=>169.95, "categorie"=>"homme", "image"=>"images/manteau_homme.png"],
+    ["id"=>7, "nom"=>"Chemise", "prix"=>79.95, "categorie"=>"homme", "image"=>"images/chemise_homme.png"],
+    ["id"=>8, "nom"=>"Chaussure de ville", "prix"=>149.95, "categorie"=>"homme", "image"=>"images/chaussures_homme.png"],
 
     // FEMME
     ["id"=>9, "nom"=>"Pantalon à pince noir", "prix"=>79.99, "categorie"=>"femme", "image"=>"images/pantalon_noir_femme.png"],
