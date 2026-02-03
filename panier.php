@@ -32,7 +32,9 @@ $total = 0;
 </ul>
 
 <h3>Total : <?= $total ?> €</h3>
-<button>Commander</button>
+<form action="commande.php" method="post">
+    <button type="submit">Commander</button>
+</form>
 <?php endif; ?>
 
 <a href="index.php">⬅ Continuer</a>
