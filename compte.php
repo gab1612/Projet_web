@@ -22,24 +22,23 @@
 </header>
 
 <!-- BODY -->
-<body1>
-    <form id="registerForm" class="form">
-        <input type="text" id="prenom" placeholder="Renseignez votre prénom" required>
+ <div class="page">
+    <div class="form-container">
+        <h1>Mon Compte</h1>
+        <form id="registerForm" class="form">
+            <input type="text" id="prenom" placeholder="Prénom" required>
+            <input type="password" id="password" placeholder="Mot de passe" required>
 
-        <input type="password" id="password" placeholder="Renseignez votre mot de passe" required>
+            <button type="submit" id="createAccount">Créer un compte</button>
+            <button type="submit" id="login">Se connecter</button>
+        </form>
+    </div>
+</div>
 
-        <input type="password" id="confirmPassword" placeholder="Confirmation de votre mot de passe" required>
+<script src="js/compte.js"></script>
 
-        <p class="error" id="errorMessage"></p>
-
-        <button type="submit">Créer un compte</button>
-        <button type="submit">Se connecter</button>
-    </form>
-
-
-<script src="script.js"></script>
-</body1>
-
+<br>
+<br>
 
 <!-- FOOTER -->
 <footer>

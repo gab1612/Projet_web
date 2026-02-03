@@ -144,83 +144,78 @@ footer {
 
 
 /*Compte*/
-* {
-    box-sizing: border-box;
+/* Page principale */
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    color: #820606;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-body1 {
-    margin: 0;
-    height: 100vh;
-    background-color: #fff7f7; 
+/* Centrage du contenu principal */
+.page {
+    flex: 1; /* prend tout l'espace restant */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Times New Roman", serif;
+    background-color: #fff;
 }
 
-.page {
+/* Formulaire */
+.form-container {
+    width: 320px; /* plus petit que 420px */
     text-align: center;
-    width: 420px;
+    padding: 30px;
+    border: 2px solid #820606;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-h1 {
+.form-container h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    letter-spacing: 2px;
     color: #820606;
-    letter-spacing: 6px;
-    font-size: 36px;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-h1::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 2px;
-    background: #820606;
-    margin: 10px auto 0;
 }
 
 .form input {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 18px;
-    border: 2px solid #820606;
-    border-radius: 8px;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1.5px solid #820606;
+    border-radius: 6px;
     font-size: 14px;
-    background-color: transparent;
     outline: none;
 }
 
-.form input::placeholder {
-    color: #959595;
-}
-
-.form input:focus {
-    border-color: #820606;
-}
-
 button {
-    width: 100%;
-    padding: 14px;
+    width: 95%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
     background-color: #820606;
-    color: white;
+    color: #fff;
     border: none;
-    border-radius: 30px;
-    font-size: 15px;
-    letter-spacing: 2px;
     cursor: pointer;
-    margin: 18px 0 20px;
+    transition: 0.2s;
 }
 
 button:hover {
-    background-color: #820606c4;
+    background-color: #5c0303;
 }
 
-
-.error {
-    color: #820606;
-    font-size: 13px;
-    margin-bottom: 10px;
+/* Footer toujours en bas */
+footer {
+    background: #820606;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0; /* pour que le footer ne disparaisse pas */
 }
 
 /* ===== TITRE CATEGORIE ===== */
