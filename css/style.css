@@ -209,12 +209,13 @@ button {
     font-size: 15px;
     letter-spacing: 2px;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 18px 0 20px;
 }
 
 button:hover {
-    background-color: #820606;
+    background-color: #820606c4;
 }
+
 
 .error {
     color: #820606;
@@ -329,8 +330,6 @@ button:hover {
     background: #333;
 }
 
-<<<<<<< HEAD
-
 /* ===== PAGE CONFIRMATION ===== */
 .confirmation {
     min-height: 60vh;
@@ -353,14 +352,16 @@ button:hover {
 }
 
 .btn-retour {
-    background: black;
+    background: #820606;
     color: white;
-    padding: 12px 25px;
+    padding: 10px 25px;
     text-decoration: none;
+    border-radius: 20px;
+    
 }
 
 .btn-retour:hover {
-    background: #333;
+    background: #820606c4;
 }
 
 
@@ -381,7 +382,7 @@ footer a {
     color: white;          /* Enlever la couleur bleue de l'hyperlien */
     text-decoration: none; /* enlève le soulignement */
 }
-=======
+
 .titre-panier {
     position: relative;      /* nécessaire pour ::before */
     color: white;            /* couleur du texte */
@@ -402,5 +403,3 @@ footer a {
     z-index: -1;             /* derrière le texte */
 }
 
-
->>>>>>> 7a3a6a9 (modif panier)
