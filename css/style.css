@@ -134,7 +134,7 @@ footer {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-<<<<<<< HEAD
+
 /*Compte*/
 * {
     box-sizing: border-box;
@@ -214,7 +214,6 @@ button:hover {
     margin-bottom: 10px;
 }
 
-=======
 /* ===== TITRE CATEGORIE ===== */
 .categorie-title {
     text-align: center;
@@ -321,4 +320,3 @@ button:hover {
 .produit-card button:hover {
     background: #333;
 }
->>>>>>> d3d1b61fd6a129b1bbfed396cc223f74c31be739

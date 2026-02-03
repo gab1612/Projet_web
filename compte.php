@@ -8,18 +8,6 @@
 </head>
 <body>
 
-<!-- MENU BURGER -->
-<div id="burger">
-    <span></span><span></span><span></span>
-</div>
-<div id="overlay"></div>
-
-<nav id="side-menu">
-    <a href="categorie.php?cat=homme">Homme</a>
-    <a href="categorie.php?cat=femme">Femme</a>
-    <a href="categorie.php?cat=enfant">Enfant</a>
-</nav>
-
 <!-- HEADER -->
 <header class="top-bar">
     <div></div>

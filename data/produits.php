@@ -11,22 +11,22 @@ $produits = [
     ["id"=>8, "nom"=>"Chemise Homme 2", "prix"=>45, "categorie"=>"homme", "image"=>"images/homme8.jpg"],
 
     // FEMME
-    ["id"=>9, "nom"=>"Robe Femme 1", "prix"=>50, "categorie"=>"femme", "image"=>"images/femme1.jpg"],
-    ["id"=>10, "nom"=>"Robe Femme 2", "prix"=>55, "categorie"=>"femme", "image"=>"images/femme2.jpg"],
-    ["id"=>11, "nom"=>"Top Femme 1", "prix"=>30, "categorie"=>"femme", "image"=>"images/femme3.jpg"],
-    ["id"=>12, "nom"=>"Top Femme 2", "prix"=>35, "categorie"=>"femme", "image"=>"images/femme4.jpg"],
-    ["id"=>13, "nom"=>"Jean Femme 1", "prix"=>45, "categorie"=>"femme", "image"=>"images/femme5.jpg"],
-    ["id"=>14, "nom"=>"Jean Femme 2", "prix"=>50, "categorie"=>"femme", "image"=>"images/femme6.jpg"],
-    ["id"=>15, "nom"=>"Veste Femme 1", "prix"=>65, "categorie"=>"femme", "image"=>"images/femme7.jpg"],
-    ["id"=>16, "nom"=>"Veste Femme 2", "prix"=>70, "categorie"=>"femme", "image"=>"images/femme8.jpg"],
+    ["id"=>9, "nom"=>"Pantalon à pince noir", "prix"=>79.99, "categorie"=>"femme", "image"=>"images/pantalon_noir_femme.png"],
+    ["id"=>10, "nom"=>"Pantalon à pince écru", "prix"=>79.99, "categorie"=>"femme", "image"=>"images/pantalon_ecru_femme.png"],
+    ["id"=>11, "nom"=>"Manteau d'hiver", "prix"=>165.90, "categorie"=>"femme", "image"=>"images/manteau_femme.png"],
+    ["id"=>12, "nom"=>"Escarpins Noirs", "prix"=>103.95, "categorie"=>"femme", "image"=>"images/escarpin_noir_femme.png"],
+    ["id"=>13, "nom"=>"Blouse Verte", "prix"=>90.99, "categorie"=>"femme", "image"=>"images/blouse_verte_femme.png"],
+    ["id"=>14, "nom"=>"Blouse transparente noire", "prix"=>84.99, "categorie"=>"femme", "image"=>"images/blouse_noir_femme.png"],
+    ["id"=>15, "nom"=>"Blazer Gris", "prix"=>96.45, "categorie"=>"femme", "image"=>"images/blazer_gris_femme.png"],
+    ["id"=>16, "nom"=>"Blazer Beige", "prix"=>96.45, "categorie"=>"femme", "image"=>"images/blazer_beige_femme.png"],
 
     // ENFANT
-    ["id"=>17, "nom"=>"T-shirt Enfant 1", "prix"=>15, "categorie"=>"enfant", "image"=>"images/enfant1.jpg"],
-    ["id"=>18, "nom"=>"T-shirt Enfant 2", "prix"=>16, "categorie"=>"enfant", "image"=>"images/enfant2.jpg"],
-    ["id"=>19, "nom"=>"Pantalon Enfant 1", "prix"=>20, "categorie"=>"enfant", "image"=>"images/enfant3.jpg"],
-    ["id"=>20, "nom"=>"Pantalon Enfant 2", "prix"=>22, "categorie"=>"enfant", "image"=>"images/enfant4.jpg"],
-    ["id"=>21, "nom"=>"Pull Enfant 1", "prix"=>25, "categorie"=>"enfant", "image"=>"images/enfant5.jpg"],
-    ["id"=>22, "nom"=>"Pull Enfant 2", "prix"=>27, "categorie"=>"enfant", "image"=>"images/enfant6.jpg"],
-    ["id"=>23, "nom"=>"Veste Enfant 1", "prix"=>35, "categorie"=>"enfant", "image"=>"images/enfant7.jpg"],
-    ["id"=>24, "nom"=>"Veste Enfant 2", "prix"=>38, "categorie"=>"enfant", "image"=>"images/enfant8.jpg"]
+    ["id"=>17, "nom"=>"Blouse blanche", "prix"=>55.99, "categorie"=>"enfant", "image"=>"images/blouse_fille.png"],
+    ["id"=>18, "nom"=>"Ensemble crème", "prix"=>92.00, "categorie"=>"enfant", "image"=>"images/ensemble_fille.jpg"],
+    ["id"=>19, "nom"=>"Robe de cérémonie", "prix"=>117.99, "categorie"=>"enfant", "image"=>"images/robe_fille.avif"],
+    ["id"=>20, "nom"=>"Chaussures vernis noires", "prix"=>99.99, "categorie"=>"enfant", "image"=>"images/chaussure_fille.jpg"],
+    ["id"=>21, "nom"=>"Chemise rose", "prix"=>60.95, "categorie"=>"enfant", "image"=>"images/chemise_garcon.png"],
+    ["id"=>22, "nom"=>"Ensemble gris clair", "prix"=>90.50, "categorie"=>"enfant", "image"=>"images/ensemble_garçon.jpg"],
+    ["id"=>23, "nom"=>"Salopette en jean ", "prix"=>78.99, "categorie"=>"enfant", "image"=>"images/salopette_garçon.png"],
+    ["id"=>24, "nom"=>"Baskets blanches", "prix"=>85.99, "categorie"=>"enfant", "image"=>"images/chaussure_garcon.png"]
 ];
