@@ -1,4 +1,4 @@
-body { margin:0; font-family: Merriweather;color:#820606 ; }
+body { margin:0; font-family: Merriweather;color:#820606 ; background-color: #fff7f7;}
 
 .top-bar {
     display:grid;
@@ -96,6 +96,7 @@ footer {
     display:flex;
     gap:20px;
     padding:20px;
+
 }
 .produit {
     border:1px solid #ddd;
@@ -149,7 +150,7 @@ footer {
 body1 {
     margin: 0;
     height: 100vh;
-    background-color: white; 
+    background-color: #fff7f7; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,6 +333,7 @@ button:hover {
 .confirmation {
     min-height: 60vh;
     display: flex;
+    background-color: #fff7f7;
     flex-direction: column;
     justify-content: center;
     align-items: center;
