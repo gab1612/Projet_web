@@ -23,7 +23,9 @@
 <!-- HEADER -->
 <header class="top-bar">
     <div></div>
-    <h1 class="site-title">PARIS XVI</h1>
+    <h1 class="site-title">
+        <a href="index.php">PARIS XVI</a>
+    </h1>
     <div class="top-links">
         <a href="#">🔍</a>
         <a href="compte.php">👤</a>
@@ -45,7 +47,7 @@
         <button type="submit">Créer un compte</button>
         <button type="submit">Se connecter</button>
     </form>
-</div>
+
 
 <script src="script.js"></script>
 </body1>

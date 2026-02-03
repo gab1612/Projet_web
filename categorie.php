@@ -27,10 +27,12 @@ $cat = strtolower($cat);
 <!-- HEADER IDENTIQUE -->
 <header class="top-bar">
     <div></div>
-    <h1 class="site-title">MA BOUTIQUE</h1>
+    <h1 class="site-title">
+        <a href="index.php">PARIS XVI</a>
+    </h1>
     <div class="top-links">
         <a href="#">🔍</a>
-        <a href="#">👤</a>
+        <a href="compte.php">👤</a>
         <a href="panier.php">🛒</a>
     </div>
 </header>
