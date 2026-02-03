@@ -12,6 +12,12 @@ body { margin:0; font-family: Merriweather;color:#820606 ; }
     font-size:40px;
 }
 
+.site-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .top-links {
     text-align:right;
 }
