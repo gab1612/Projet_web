@@ -33,7 +33,7 @@ $total = 0;
     <h1 class="titre-panier">Votre panier</h1>
 
     <?php if (!$panier): ?>
-        <p>Panier vide</p>
+        <p style="text-align: center;">Panier vide</p>
     <?php else: ?>
         <div class="produits-grid">
             <?php foreach ($panier as $id => $qte): ?>
