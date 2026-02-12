@@ -161,7 +161,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #fff7f7;
 }
 
 /* Formulaire */
@@ -193,9 +193,10 @@ body {
 }
 
 button {
-    width: 95%;
+    width: 100%;
     padding: 12px;
     margin-top: 8px;
+    margin-bottom: 10px;
     border-radius: 25px;
     font-size: 14px;
     letter-spacing: 1px;
