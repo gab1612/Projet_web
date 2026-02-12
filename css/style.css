@@ -1,5 +1,3 @@
-body { margin:0; font-family: Merriweather;color:#820606 ; background-color: #fff7f7;}
-
 .top-bar {
     display:grid;
     grid-template-columns: 1fr auto 1fr;
@@ -47,14 +45,6 @@ body { margin:0; font-family: Merriweather;color:#820606 ; background-color: #ff
     font-size:30px;
     color:white;
 }
-
-footer {
-    background:#820606;
-    color:white;
-    text-align:center;
-    padding:1px;
-}
-
 
 /* BURGER */
 #burger {
@@ -389,7 +379,7 @@ footer a {
     color: white;            /* couleur du texte */
     font-size: 2em;
     text-align: center;      /* centrer le texte */
-    margin: 0;               /* supprimer marges par défaut */
+    margin-bottom: 2;               /* ajouter un espace après la barre de panier */
     padding: 5px ;         /* espace vertical pour la bande */
 }
 
