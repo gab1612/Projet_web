@@ -10,6 +10,7 @@ body { margin:0; font-family: Merriweather;color:#820606 ; background-color: #ff
 .site-title {
     text-align:center;
     font-size:40px;
+    margin-bottom: 0;
 }
 
 .site-title a {
@@ -225,8 +226,12 @@ footer {
 }
 
 .categorie-title h2 {
+    background-color: #820606;
+    color : white;
     font-size: 32px;
     letter-spacing: 2px;
+    padding: 15px 40px;
+    margin-top: 0;
 }
 
 /* ===== GRILLE PRODUITS ===== */
