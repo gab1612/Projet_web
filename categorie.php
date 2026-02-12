@@ -58,6 +58,7 @@ foreach ($produits as $p):
             <div class="selection-taille">
                 <label>TAILLE :</label>
                 <select name="taille" class="select-paris">
+                    <option value="XS">XS</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
                     <option value="L">L</option>
