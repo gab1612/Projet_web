@@ -43,18 +43,29 @@ $cat = strtolower($cat);
 
 <section class="produits-grid">
 <?php
-$count = 0;
 foreach ($produits as $p):
     if ($p["categorie"] === $cat):
-        $count++;
 ?>
     <div class="produit-card">
         <img src="<?= $p["image"] ?>" alt="<?= $p["nom"] ?>">
-        <h3><?= $p["nom"] ?></h3>
-        <p><?= $p["prix"] ?> €</p>
-        <form action="ajouter_panier.php" method="post">
+        
+        <h3><?= strtoupper($p["nom"]) ?></h3>
+        <p><?= number_format($p["prix"], 2) ?> €</p>
+        
+        <form action="ajouter_panier.php" method="post" class="form-achat">
             <input type="hidden" name="id" value="<?= $p["id"] ?>">
-            <button>Commander</button>
+            
+            <div class="selection-taille">
+                <label>TAILLE :</label>
+                <select name="taille" class="select-paris">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-ajouter-direct">AJOUTER</button>
         </form>
     </div>
 <?php
@@ -64,7 +75,7 @@ endforeach;
 </section>
 
 <footer>
-    <p>© 2026 Ma Boutique — À propos | Contact | Mentions légales</p>
+    <p>© 2026 PARIS XVI — À propos | Contact | Mentions légales</p>
 </footer>
 
 <script src="js/menu.js"></script>
