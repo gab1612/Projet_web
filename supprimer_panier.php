@@ -1,16 +1,16 @@
 <?php
 session_start();
 
-// Vérifie si un ID est passé
-if (isset($_POST['id'])) {
-    $id = $_POST['id'];
+// On vérifie si la 'cle' (id + taille) est bien envoyée par le formulaire
+if (isset($_POST['cle'])) {
+    $cle = $_POST['cle'];
 
-    // Supprime l'article du panier
-    if (isset($_SESSION['panier'][$id])) {
-        unset($_SESSION['panier'][$id]);
+    // On supprime l'entrée spécifique du tableau panier en utilisant cette clé
+    if (isset($_SESSION['panier'][$cle])) {
+        unset($_SESSION['panier'][$cle]);
     }
 }
 
-// Redirige vers la page panier
+// Redirige vers la page du panier pour voir le résultat
 header("Location: panier.php");
 exit;

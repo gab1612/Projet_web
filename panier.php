@@ -15,7 +15,6 @@ $total = 0;
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="top-bar">
     <div></div>
     <h1 class="site-title">
@@ -28,7 +27,6 @@ $total = 0;
     </div>
 </header>
 
-<!-- BODY -->
 <main class="page-content">
     <h1 class="titre-panier">Votre panier</h1>
 
@@ -36,42 +34,54 @@ $total = 0;
         <p style="text-align: center;">Panier vide</p>
     <?php else: ?>
         <div class="produits-grid">
-            <?php foreach ($panier as $id => $qte): ?>
-                <?php foreach ($produits as $p) if ($p["id"] == $id): ?>
+            <?php 
+            // On parcourt le panier (chaque $item contient id, taille et qte)
+            foreach ($panier as $cle => $item): 
+                $id = $item['id'];
+                $taille = $item['taille'];
+                $qte = $item['qte'];
+
+                foreach ($produits as $p):
+                    if ($p["id"] == $id): 
+                        $sous_total = $p["prix"] * $qte;
+                        $total += $sous_total;
+            ?>
                     <div class="produit-card">
-                        <!-- Image du produit -->
                         <img src="<?= htmlspecialchars($p["image"]) ?>" alt="<?= htmlspecialchars($p["nom"]) ?>">
 
-                        <!-- Nom et quantité -->
                         <h3><?= htmlspecialchars($p["nom"]) ?></h3>
+                        
+                        <p><strong>Taille : <?= htmlspecialchars($taille) ?></strong></p>
+                        
                         <p>Quantité : <?= $qte ?></p>
-                        <p>Prix : <?= $p["prix"] * $qte ?> €</p>
+                        <p>Prix : <?= $sous_total ?> €</p>
 
-                        <!-- Bouton supprimer -->
                         <form action="supprimer_panier.php" method="post">
-                            <input type="hidden" name="id" value="<?= $id ?>">
+                            <input type="hidden" name="cle" value="<?= $cle ?>">
                             <button type="submit" class="btn-panier">Supprimer</button>
                         </form>
                     </div>
-                    <?php $total += $p["prix"] * $qte; endif; ?>
-            <?php endforeach; ?>
+            <?php 
+                    endif; 
+                endforeach; 
+            endforeach; 
+            ?>
         </div>
+
         <div class="shopping-back">
             <a class="btn-retour" href="index.php">⬅ Continuer mon shopping</a>
         </div>
 
-        <!-- Total et bouton commander -->
-        <h3>Total : <?= $total ?> €</h3>
-        <form action="commande.php" method="post">
-            <button type="submit">Valider ma commande</button>
-        </form>
-
-        <!-- Bouton continuer shopping -->
+        <div class="panier-footer">
+            <h3>Total : <?= number_format($total, 2) ?> €</h3>
+            <form action="commande.php" method="post">
+                <button type="submit" class="btn-valider-panier">Valider ma commande</button>
+            </form>
+        </div>
         
     <?php endif; ?>
 </main>
 
-<!-- FOOTER -->
 <footer>
     <p>© 2026 Paris XVI – 
         <a href="apropos.php">À propos</a> | 
