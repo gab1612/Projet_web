@@ -32,9 +32,9 @@ unset($_SESSION["panier"]);
     <div></div>
     <h1 class="site-title">PARIS XVI</h1>
     <div class="top-links">
-        <a href="#">🔍</a>
-        <a href="#">👤</a>
-        <a href="panier.php">🛒</a>
+        <a href="#"><img src="images/icone_recherche.png"></a>
+        <a href="compte.php"><img src="images/icone_compte.png"></a>
+        <a href="panier.php"><img src="images/icone_panier.png"></a>
     </div>
 </header>
 

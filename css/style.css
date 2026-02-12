@@ -394,3 +394,18 @@ footer a {
     z-index: -1;             /* derrière le texte */
 }
 
+/* ===== ICONES HEADER UNIFORMES ===== */
+.top-links a {
+    display: inline-block;
+    width: 40px;        /* zone identique pour chaque icône */
+    height: 40px;
+    margin-left: 5px;
+}
+
+.top-links a img {
+    width: 22px;        /* taille visible de l’icône */
+    height: 22px;
+    object-fit: contain; /* garde les proportions */
+    display: block;
+    margin: auto;       /* centre dans le carré */
+}
