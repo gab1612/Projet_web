@@ -143,6 +143,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #fff7f7;
 }
 
 /* Centrage du contenu principal */
@@ -151,7 +152,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #fff7f7;
 }
 
 /* Formulaire */
