@@ -74,7 +74,7 @@ endforeach;
 </section>
 
 <footer>
-    <p>© 2026 Ma Boutique — À propos | Contact | Mentions légales</p>
+    <p>© 2026 PARIS XVI — À propos | Contact | Mentions légales</p>
 </footer>
 
 <script src="js/menu.js"></script>
