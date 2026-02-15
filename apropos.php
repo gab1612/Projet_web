@@ -74,7 +74,7 @@
 <footer>
     <p>© 2026 Paris XVI – 
         <a href="apropos.php">À propos</a> | 
-        <a href="#">Contact</a> | 
+        Contact | 
         Mentions légales
     </p>
 </footer>

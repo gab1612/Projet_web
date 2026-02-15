@@ -20,6 +20,7 @@
 .top-links {
     text-align:right;
 }
+
 .top-links a {
     margin-left:15px;
     text-decoration:none;
@@ -29,15 +30,18 @@
 .categories {
     display:flex;
 }
+
 .categories a {
     flex:1;
     position:relative;
 }
+
 .categories img {
     width:100%;
     height:750px;
     object-fit:cover;
 }
+
 .categories span {
     position:absolute;
     bottom:20px;
@@ -54,12 +58,14 @@
     z-index:2000;
     cursor:pointer;
 }
+
 #burger span {
     display:block;
     width:30px;
     height:4px;
     background:#820606;
     margin:7px 0;
+    transition: 0.3s;
 }
 
 #side-menu {
@@ -73,28 +79,39 @@
     transition:0.3s;
     z-index:1800;
 }
+
 #side-menu a {
     display:block;
     color:white;
     padding:20px;
     text-decoration:none;
 }
+
 #side-menu.open {
     left:0;
 }
 
-/* PRODUITS */
-.produits {
-    display:flex;
-    gap:20px;
-    padding:20px;
+/* Quand menu ouvert */
+#overlay.active {
+    display: block;
+}
 
+/* Burger blanc quand menu ouvert */
+#burger.open span {
+    background: white;
 }
-.produit {
-    border:1px solid #ddd;
-    padding:10px;
-    width:200px;
+
+/* Animation X */
+#burger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
 }
+#burger.open span:nth-child(2) {
+    opacity: 0;
+}
+#burger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
 
 /* OVERLAY */
 #overlay {
@@ -106,31 +123,6 @@
     background: rgba(0,0,0,0.5);
     z-index: 1500;
     display: none;
-}
-
-/* Quand menu ouvert */
-#overlay.active {
-    display: block;
-}
-
-/* Burger blanc quand menu ouvert */
-#burger span {
-    transition: 0.3s;
-}
-
-#burger.open span {
-    background: white;
-}
-
-/* BONUS : animation X */
-#burger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
-}
-#burger.open span:nth-child(2) {
-    opacity: 0;
-}
-#burger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 
@@ -226,55 +218,7 @@ footer {
     margin-top: 0;
 }
 
-/* ===== GRILLE PRODUITS ===== */
-.produits-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    padding: 0 40px 60px;
-}
-
 /* ===== CARTE PRODUIT ===== */
-.produit-card {
-    border: 1px solid #e0e0e0;
-    padding: 15px;
-    text-align: center;
-    background: white;
-    transition: transform 0.2s;
-}
-
-.produit-card:hover {
-    transform: translateY(-5px);
-}
-
-.produit-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.produit-card h3 {
-    margin: 15px 0 5px;
-    font-size: 18px;
-}
-
-.produit-card p {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.produit-card button {
-    background: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.produit-card button:hover {
-    background: #333;
-}
-
 .produits-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
